@@ -53,8 +53,6 @@ namespace MerchLoad
                     throw new Exception("Поле 'Сумма' не должно быть пустым и должно содержать данные от 1 до 10 цифр и необязательный остаток длинной 2 с разделителем '.'");
                 }
 
-                //https://endpoint/v1/operator/cancel
-                //12139186
             }
             catch (Exception ex)
             {
