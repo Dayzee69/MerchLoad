@@ -1,0 +1,18 @@
+﻿<Window x:Class="MerchLoad.CancelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MerchLoad"
+        mc:Ignorable="d"
+        Title="Отмена" Height="400" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Height="135" Width="250" >
+            <Label Content="ID Транзакции" Height="25"></Label>
+            <TextBox x:Name="tbTrans" Height="25" VerticalContentAlignment="Center" Padding="5,0,0,0" PreviewTextInput="tbTrans_PreviewTextInput"/>
+            <Label Content="Сумма" Height="25"></Label>
+            <TextBox x:Name="tbAmount" Height="25" VerticalContentAlignment="Center" Padding="5,0,0,0" PreviewTextInput="tbAmount_PreviewTextInput" ></TextBox>
+            <Button x:Name="loadButton" Content="Выполнить" Height="25" Margin="50,10,50,0" Click="loadButton_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

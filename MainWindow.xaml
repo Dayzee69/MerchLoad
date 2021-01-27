@@ -1,0 +1,24 @@
+﻿<Window x:Class="MerchLoad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Пополнение" Height="400" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem IsEnabled="False" Height="25" Header="Файл">
+                <MenuItem  x:Name="cancelMenuItem" Header="Отмена" Click="cancelMenuItem_Click"></MenuItem>
+                <MenuItem IsEnabled="False" x:Name="regMenuItem" Header="Регистрация" Click="regMenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <StackPanel Height="135" Width="250" >
+            <Label Content="Лицевой счет" Height="25"></Label>
+            <TextBox x:Name="tbAccount" Height="25" VerticalContentAlignment="Center" Padding="5,0,0,0" PreviewTextInput="tbAccount_PreviewTextInput"/>
+            <Label Content="Сумма" Height="25"></Label>
+            <TextBox x:Name="tbAmount" Height="25" VerticalContentAlignment="Center" Padding="5,0,0,0" PreviewTextInput="tbAmount_PreviewTextInput" ></TextBox>
+            <Button x:Name="loadButton" Content="Выполнить" Height="25" Margin="50,10,50,0" Click="loadButton_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
